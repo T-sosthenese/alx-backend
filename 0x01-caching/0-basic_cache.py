@@ -22,7 +22,7 @@ class BasicCache(BaseCaching):
         A class method that is used to assign an item to a key and stores
         the value in the cache_data class variable of the parent class.
         """
-        if key is not None or item is not None:
+        if key is not None and item is not None:
             self.cache_data[key] = item
 
     def get(self, key):
