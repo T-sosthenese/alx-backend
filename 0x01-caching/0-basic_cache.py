@@ -10,6 +10,13 @@ class BasicCache(BaseCaching):
     BasicCache: A class that inherits from BasicCaching and serves as
     a caching system.
     """
+    def __init__(self):
+        """
+        A class constructor
+        """
+        super().__init__()
+        self.cache_data = {}
+
     def put(self, key, item):
         """
         A class method that is used to assign an item to a key and stores
