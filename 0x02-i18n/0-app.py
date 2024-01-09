@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
-app.route('/')
+@app.route('/')
 def get_index() -> str:
     """Renders the home page"""
     return render_template('0-index.html')
